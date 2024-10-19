@@ -394,10 +394,7 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     playButton.addEventListener('click', () => {
-        if (dotsCount >= maxDots) {
-            alert('Game end!');
-            return;
-        }
+        
 
         if (dotsCount < numRows) {
             placeDot(dotsCount);
