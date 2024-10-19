@@ -394,7 +394,9 @@ document.addEventListener('DOMContentLoaded', () => {
     });
 
     playButton.addEventListener('click', () => {
-        
+        if (dotsCount >= maxDots) {
+            clearAllSquares();
+        }
 
         if (dotsCount < numRows) {
             placeDot(dotsCount);
