@@ -395,7 +395,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     playButton.addEventListener('click', () => {
         if (dotsCount >= maxDots) {
+            initializeBoard();
+            updateBoardSize();
             clearAllSquares();
+            dotsCount = 0;
         }
 
         if (dotsCount < numRows) {
